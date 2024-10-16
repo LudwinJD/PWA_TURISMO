@@ -1,0 +1,46 @@
+// {
+//   "firestore": {
+//     "rules": "firestore.rules",
+//     "indexes": "firestore.indexes.json"
+//   },
+//   "database": {
+//     "rules": "database.rules.json"
+//   },
+//   "hosting": {
+//     "site": "appvue-nombre-ap",
+//     "public": "dist",
+//     "ignore": [
+//       "firebase.json",
+//       "**/.*",
+//       "**/node_modules/**"
+//     ],
+//     "rewrites": [
+//       {
+//         "source": "**",
+//         "destination": "/index.html"
+//       }
+//     ]
+//   },
+//   "storage": {
+//     "rules": "storage.rules"
+//   }
+// }
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  }
+}
